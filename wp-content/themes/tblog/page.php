@@ -6,10 +6,11 @@
 
 get_header();
 if (have_posts()) : while (have_posts()) : the_post(); ?>
-<div id="page-heading">
+
+<div id="wrap" class="clearfix">
+  <div id="page-heading">
     <h1><?php the_title(); ?></h1>		
 </div><!-- END page-heading -->
-<div id="wrap" class="clearfix">
 <div class="post clearfix">
     <div class="clearfix">	
     	<?php
