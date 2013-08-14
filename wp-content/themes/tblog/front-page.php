@@ -6,16 +6,18 @@
 
 get_header(); ?>
 
-        <div class="pagetitle">
+        <div class="front-page-content-main">
+          <div class="inner-front-page-content-main">
             <?php if(!empty($data['h1_tagline'])) { ?>
                 <?php echo $data['h1_tagline']; ?>
             <?php } ?>   
             <?php if(!empty($data['message_tagline'])) { ?>
                 <?php echo $data['message_tagline']; ?>
             <?php } ?> 
+          </div>
         </div>
 
-<div id="wrap" class="clearfix">
+<!--<div id="wrap" class="clearfix">
 <div class="home-wrap clearfix">
 	<div id="home" class="clearfix">
 
@@ -34,7 +36,7 @@ get_header(); ?>
 		// Show category filter
 		$cats = get_terms('portfolio_cats');
 		if($cats[1] !='') { ?> 
-        <!-- Portfolio Filter -->
+         Portfolio Filter 
         <ul id="portfolio-cats" class="filter clearfix">
             <li><a href="#all" rel="all" class="active"><span><?php _e('All', 'TBLOG'); ?></span></a></li>
             <?php
@@ -70,7 +72,7 @@ get_header(); ?>
                 </ul>
             </div>
         
-        </div><!-- END #home -->      	
+        </div> END #home       	
 
 	<?php
     pagination();
@@ -78,6 +80,6 @@ get_header(); ?>
 	endif; ?>
 
 
-</div><!-- END home-wrap -->   
-</div>
+</div> END home-wrap    
+</div>-->
 <?php get_footer(); ?>

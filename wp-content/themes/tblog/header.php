@@ -20,6 +20,7 @@ global $data; //get theme options
 <body <?php body_class(); ?>>
 
 <div id="header" class="clearfix">
+  <div id="inner-header" class="clearfix">
         <div id="logo">
         	<?php
             	if(!empty($data['custom_logo'])) { ?>
@@ -30,7 +31,6 @@ global $data; //get theme options
             <span class="description"><?php bloginfo( 'description' ); ?></span>
             
         </div><!-- END logo -->
-     
  
      <?php if(!empty($data['custom_logo'])) { ?>
         <link rel="icon" type="image/png" href="<?php echo $data['custom_logo']; ?>" />
@@ -55,5 +55,5 @@ global $data; //get theme options
         </nav>
             
   
-        
+          </div> <!-- END inner-header-->
 </div><!-- END header -->

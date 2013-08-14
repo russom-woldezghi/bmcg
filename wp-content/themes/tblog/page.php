@@ -15,10 +15,11 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
     <div class="clearfix">	
     	<?php
     	the_content();
-		comments_template(); ?>  
+		//comments_template(); ?>  
 	</div><!-- END entry -->
 </div><!-- END post -->
 
 <?php endwhile; endif; get_sidebar(); ?>
+
 </div>
 <?php get_footer(); ?>
